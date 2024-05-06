@@ -153,7 +153,7 @@ header {
     transform: scaleX(.75) scaleY(1.5);
 }
 
-#pageArrowDiv a:visited{
+#pageArrowDiv a:active, #pageArrowDiv a:visited{
     color: white;
 }
 
