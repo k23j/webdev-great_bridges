@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: azure;
+    background-color: rgb(238, 238, 238);
 }
 
 header {
@@ -26,7 +26,7 @@ header {
     padding-right: 10%;
 }
 
-.headerDiv {
+.headerDiv, .copyrightDiv {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -34,20 +34,20 @@ header {
     align-items: center;
 }
 
-#headerTrail {
+#headerTrail, #copyrightTrail {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-#headerTrail>* {
+#headerTrail > *, #copyrightTrail > * {
     width: 1.5em;
     height: 1.5em;
     margin-left: 1em;
 }
 
-#headerTrail img {
+#headerTrail img, #copyrightTrail img {
     width: 100%;
     height: 100%;
 }
@@ -170,4 +170,62 @@ header {
 .selectedPageIndicator {
     background-color: aqua;
     /* Blue fill for the selected page */
+}
+
+footer {
+  background-color: rgb(79, 79, 78);
+}
+
+#sponsorsDiv {
+  height: 11em;
+  background-color: white;
+}
+
+#footerGrid {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* justify-content: space-between; */
+  gap: 3em;
+
+  color: white;
+}
+
+#contactList {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+}
+
+#contactList li {
+  position: relative;
+  left: -45px;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  line-height: 2em;
+
+  margin-bottom: .3em;
+}
+
+#contactList a {
+  color: white;
+}
+
+.contactListIcon {
+  margin-right: .5em;
+}
+
+#copyright {
+  background-color: rgb(37, 36, 35);
+  height: 5em;
+  color: white;
+}
+
+#copyright a, #copyright a:visited {
+  color: aqua;
 }

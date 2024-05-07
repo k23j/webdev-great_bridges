@@ -6,6 +6,10 @@
     <title>GreatBridges</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <!-- Custom Elements -->
+    <script type="module" src="footer_grid_item.js"></script>
+    <script type="module" src="post_resume.js"></script>
 </head>
 <body>
     <header class="mid">
@@ -15,7 +19,7 @@
                 <span class="logo" id="logoB">Bridges</span>
             </div>
             <div id="headerTrail">
-                <a href="index.html"><img src="./static/img/linkedin_Icon.png" alt="Linkedin Icon"></a>
+                <a href="index.html"><img src="./static/img/linkedin_icon.png" alt="Linkedin Icon"></a>
                 <a href="index.html"><img src="./static/img/twitter_icon.png" alt="Twitter Icon"></a>
                 <a href="index.html"><img src="./static/img/facebook_icon.png" alt="Facebook Icon"></a>
                 <a href="index.html"><img src="./static/img/rss_feed.png" alt="Rss Feed Icon"></a>
@@ -50,5 +54,46 @@
         <script src='pageView.js'></script>
 
     </main>
+
+    <footer>
+      <div id="sponsorsDiv"></div>
+
+      <div id="footerGrid" class="mid">
+        <footer-grid-item title="Popular Post">
+          <post-resume href="index.html" date="07-Mai 2024">Duis aute irure dolor esse.</post-resume>
+          <hr style="margin-top: 1.3em;">
+          <post-resume href="index.html" date="05-Mai 2024">Consectetur adipiscing elit.</post-resume>
+        </footer-grid-item>
+
+        <footer-grid-item title="Tags">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</footer-grid-item>
+
+        <footer-grid-item title="A little about me">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </footer-grid-item>
+
+        <footer-grid-item title="Contact">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul id="contactList">
+            
+            <li><svg class="contactListIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#75FBFD"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"/></svg>Rio de Janeiro/Brasil</li>
+            <li><svg class="contactListIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#75FBFD"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z"/></svg><a href="mailto:passos.dev.k@gmail.com">passos.dev.k@gmail.com</a></li>
+            <li><svg class="contactListIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#75FBFD"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/></svg>(21) 96515-2335</li>
+          </ul>
+        </footer-grid-item>
+      </div>
+
+      <div id="copyright"  class="mid">
+        <div class="copyrightDiv">
+          <span>© 2024 <a href="https://github.com/k23j/">k23j</a>. All rights reserved.</span>
+          <div id="copyrightTrail">
+              <a href="index.html"><img src="./static/img/linkedin_icon.png" alt="Linkedin Icon"></a>
+              <a href="index.html"><img src="./static/img/twitter_icon.png" alt="Twitter Icon"></a>
+              <a href="index.html"><img src="./static/img/facebook_icon.png" alt="Facebook Icon"></a>
+              <a href="index.html"><img src="./static/img/rss_feed.png" alt="Rss Feed Icon"></a>
+          </div>
+      </div>
+
+    </footer>
 </body>
 </html>
