@@ -148,14 +148,14 @@ header {
     z-index: 1;
 }
 
-#pageArrowDiv a {
+/* #pageArrowDiv a {
     text-decoration: none;
     transform: scaleX(.75) scaleY(1.5);
 }
 
 #pageArrowDiv a, #pageArrowDiv a:visited{
     color: white;
-}
+} */
 
 .pageIndicator {
     width: 20px;

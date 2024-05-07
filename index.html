@@ -7,6 +7,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
+    <link rel="preload" href="./static/img/bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/Brooklyn_Bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/forth_bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/Golden-Gate-Bridge-San-Francisco.png" as="image">
+    <link rel="preload" href="./static/img/tower_bridge.jpg" as="image">
+
+
     <!-- Custom Elements -->
     <script type="module" src="footer_grid_item.js"></script>
     <script type="module" src="post_resume.js"></script>
@@ -47,8 +54,12 @@
             <!-- Js populated -->
             </div>
             <div id="pageArrowDiv">
-                <a id="pageViwer_previusPage" href="index.html">&lt;</a>
-                <a id="pageViwer_nextPage" href="index.html">&gt;</a>
+                <a id="pageViwer_previusPage" href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/></svg>
+                </a>
+                <a id="pageViwer_nextPage" href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/></svg>
+                </a>
             </div>
         </div>
         <script src='pageView.js'></script>
