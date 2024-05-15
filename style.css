@@ -172,13 +172,28 @@ header {
     /* Blue fill for the selected page */
 }
 
+#imgBlockDiv{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #EEEEEEEE;
+}
+
 footer {
   background-color: rgb(79, 79, 78);
 }
 
 #sponsorsDiv {
-  height: 11em;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+#sponsorsDiv img {
+  width: 175px;
+  opacity: .4;
 }
 
 #footerGrid {

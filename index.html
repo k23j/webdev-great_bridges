@@ -7,16 +7,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
-    <link rel="preload" href="./static/img/bridge.jpg" as="image">
-    <link rel="preload" href="./static/img/Brooklyn_Bridge.jpg" as="image">
-    <link rel="preload" href="./static/img/forth_bridge.jpg" as="image">
-    <link rel="preload" href="./static/img/Golden-Gate-Bridge-San-Francisco.png" as="image">
-    <link rel="preload" href="./static/img/tower_bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/bridges/bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/bridges/Brooklyn_Bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/bridges/forth_bridge.jpg" as="image">
+    <link rel="preload" href="./static/img/bridges/Golden-Gate-Bridge-San-Francisco.png" as="image">
+    <link rel="preload" href="./static/img/bridges/tower_bridge.jpg" as="image">
 
 
     <!-- Custom Elements -->
     <script type="module" src="footer_grid_item.js"></script>
     <script type="module" src="post_resume.js"></script>
+    <script type="module" src="img_block.js"></script>
 </head>
 <body>
     <header class="mid">
@@ -26,10 +27,10 @@
                 <span class="logo" id="logoB">Bridges</span>
             </div>
             <div id="headerTrail">
-                <a href="index.html"><img src="./static/img/linkedin_icon.png" alt="Linkedin Icon"></a>
-                <a href="index.html"><img src="./static/img/twitter_icon.png" alt="Twitter Icon"></a>
-                <a href="index.html"><img src="./static/img/facebook_icon.png" alt="Facebook Icon"></a>
-                <a href="index.html"><img src="./static/img/rss_feed.png" alt="Rss Feed Icon"></a>
+                <a href="index.html"><img src="./static/img/icons/linkedin_icon.png" alt="Linkedin Icon"></a>
+                <a href="index.html"><img src="./static/img/icons/twitter_icon.png" alt="Twitter Icon"></a>
+                <a href="index.html"><img src="./static/img/icons/facebook_icon.png" alt="Facebook Icon"></a>
+                <a href="index.html"><img src="./static/img/icons/rss_feed.png" alt="Rss Feed Icon"></a>
             </div>
         </div>
     </header>
@@ -64,10 +65,21 @@
         </div>
         <script src='pageView.js'></script>
 
+        <div id="imgBlockDiv" class="mid">
+          <img-block src="static/img/article_img/article_img_1.png" title="Lorem Ipsum is simply">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </img-block>
+        </div>
+
     </main>
 
     <footer>
-      <div id="sponsorsDiv"></div>
+      <div id="sponsorsDiv">
+        <img src="static/img/sponsors/dribbble_logo.jpg" alt="dribbble_logo">
+        <img src="static/img/sponsors/leopards_logo.png" alt="leopards_logo">
+        <img src="static/img/sponsors/behance_logo.png" alt="behance_logo">
+        <img src="static/img/sponsors/puma_logo.png" alt="puma_logo">
+      </div>
 
       <div id="footerGrid" class="mid">
         <footer-grid-item title="Popular Post">
@@ -98,10 +110,10 @@
         <div class="copyrightDiv">
           <span>© 2024 <a href="https://github.com/k23j/">k23j</a>. All rights reserved.</span>
           <div id="copyrightTrail">
-              <a href="index.html"><img src="./static/img/linkedin_icon.png" alt="Linkedin Icon"></a>
-              <a href="index.html"><img src="./static/img/twitter_icon.png" alt="Twitter Icon"></a>
-              <a href="index.html"><img src="./static/img/facebook_icon.png" alt="Facebook Icon"></a>
-              <a href="index.html"><img src="./static/img/rss_feed.png" alt="Rss Feed Icon"></a>
+              <a href="index.html"><img src="./static/img/icons/linkedin_icon.png" alt="Linkedin Icon"></a>
+              <a href="index.html"><img src="./static/img/icons/twitter_icon.png" alt="Twitter Icon"></a>
+              <a href="index.html"><img src="./static/img/icons/facebook_icon.png" alt="Facebook Icon"></a>
+              <a href="index.html"><img src="./static/img/icons/rss_feed.png" alt="Rss Feed Icon"></a>
           </div>
       </div>
 
